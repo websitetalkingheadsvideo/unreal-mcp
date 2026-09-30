@@ -1,0 +1,26 @@
+---
+description: MCP_test — Unreal Engine 5.8 cinematic video project
+alwaysApply: true
+---
+
+# Project context
+
+- **Engine:** Unreal Engine 5.8 (`MCP_test.uproject`).
+- **Goal:** Produce videos from Unreal (cinematics, MRQ renders, template-based workflows).
+- **Code:** No `Source/` yet — treat this as **Content + Config + editor plugins** unless C++ is added.
+- **Startup map:** `/Game/CinematicTemplate/Maps/Main` (see `Config/DefaultEngine.ini`).
+
+## Key enabled plugins
+
+Movie Render Pipeline, MetaHuman, Virtual Camera, Cinematic Assembly Tools, Niagara MRQ, Model Context Protocol + MCP Client Toolset, AI Assistant, Editor Toolset.
+
+## Agent behavior
+
+- Prefer **Sequencer**, **Level Sequences**, **MRQ**, and **Content** paths under `/Game/...` when discussing assets.
+- Change project defaults via `Config/Default*.ini` only when the user wants project-wide settings; otherwise assume per-asset or editor changes.
+- Do not commit or push git unless the user asks.
+- Never suggest editing `.uasset` / `.umap` as text; use Unreal Editor, Python, or MCP tools when available.
+
+## Repo hygiene
+
+Ignore `Intermediate/`, `Saved/`, `DerivedDataCache/`, `Binaries/` (see `.gitignore`). Keep changes minimal and focused.

@@ -1,0 +1,30 @@
+---
+description: Cinematic rendering and video output conventions (UE 5.8)
+globs: Config/**/*.ini,**/*.uproject,Content/**/*
+alwaysApply: false
+---
+
+# Cinematic / video workflow
+
+## Rendering stack (project defaults)
+
+- **GI / reflections:** Lumen (`r.DynamicGlobalIlluminationMethod=1`, `r.ReflectionMethod=1`).
+- **Ray tracing / path tracing:** enabled in `DefaultEngine.ini` — respect performance when changing quality.
+- **MRQ:** Use Movie Render Pipeline for final frames; Niagara MRQ plugin is enabled for FX-heavy shots.
+
+## Practical guidance
+
+- **Previs in editor**, **finals via MRQ** (image sequences → external encode if needed).
+- Sequencer is the source of truth for shot timing, cameras, and cuts.
+- MetaHuman + Virtual Camera plugins are in play — prefer existing template content under `Content/CinematicTemplate/` before greenfield setups.
+- When tuning exposure: project disables default auto-exposure; use manual / local exposure as configured.
+
+## Config edits
+
+- Match existing INI section style; avoid duplicate keys unless intentionally overriding (+/- Unreal syntax).
+- After INI changes that affect rendering, note that a **editor restart or hot reload** may be required.
+
+## Out of scope unless requested
+
+- Replatforming to a different render feature level.
+- Large Content migrations or retargeting entire template projects.

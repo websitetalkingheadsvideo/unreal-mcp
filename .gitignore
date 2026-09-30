@@ -1,0 +1,42 @@
+# Unreal Engine
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/
+*.sln
+*.suo
+*.xcodeproj
+*.xcworkspace
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+# Compiled / generated
+*.dll
+*.exe
+*.pdb
+*.obj
+*.o
+*.a
+*.lib
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vs/
+.idea/
+*.swp
+*~
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+
+# Optional local overrides (keep out of git if you use them)
+Config/User*.ini
