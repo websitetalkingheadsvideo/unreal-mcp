@@ -1,0 +1,28 @@
+---
+description: VbN Videos — Valley by Night cinematic look-dev (authoritative)
+alwaysApply: true
+---
+
+# VbN Videos style authority
+
+**Product:** **VbN Videos** — Unreal cinematics for *Valley by Night* (Phoenix 1994, gothic–noir).
+
+**Authority order:** `style_bible/RULES.md` (wins on conflict) → `style_bible/PROMPTS.md` + Art Bible chapters → `style_bible/VbN_Unreal_Engine_LookDev.md` for UE/MRQ. See `style_bible/README.md`.
+
+## North star (non‑negotiable)
+
+Gothic–noir, desert modern: warm sodium/gold vs teal moon/shadow, low saturation, filmic contrast, slow camera, restrained performance. Not daylight comedy, superhero VFX, or clean LED modernism.
+
+## Unreal defaults to enforce in advice
+
+- **Export:** 1920×1080 (MRQ).
+- **Grade:** split tone (shadows `#0B3C49`, highlights `#C87B3E` / `#d4b06d`); global sat −15% to −30%; soft vignette; light grain; subtle haze.
+- **Highlights:** roll toward `#f5e6d3`, not clip-white.
+- **Camera:** 35 / 50 / 85 mm; slow dolly/pan; no handheld/whip pans (Dutch only for Malkavian).
+- **Lighting bans:** pure white LED, flat fill, bright midday exteriors.
+
+## When suggesting Sequencer or MRQ changes
+
+Align shot structure (EST → MCU → insert → beat → close → fade/title) and location recipes from the style bible. Use the **negative prompt block** in that doc for review/lint language.
+
+On conflict with this rule file, **`style_bible/VbN_Unreal_Engine_LookDev.md`** and future synced Art Bible sources win.

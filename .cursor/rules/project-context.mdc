@@ -5,8 +5,10 @@ alwaysApply: true
 
 # Project context
 
+- **Product:** **VbN Videos** — cinematic output for *Valley by Night*.
+- **Style bible:** `style_bible/VbN_Unreal_Engine_LookDev.md` (see `vbn-videos-style.mdc`).
 - **Engine:** Unreal Engine 5.8 (`MCP_test.uproject`).
-- **Goal:** Produce videos from Unreal (cinematics, MRQ renders, template-based workflows).
+- **Goal:** Produce VbN-aligned videos (Sequencer, MRQ, template workflows).
 - **Code:** No `Source/` yet — treat this as **Content + Config + editor plugins** unless C++ is added.
 - **Startup map:** `/Game/CinematicTemplate/Maps/Main` (see `Config/DefaultEngine.ini`).
 

@@ -1,6 +1,8 @@
 # MCP_test
 
-Unreal Engine **5.8** project for creating **cinematic videos** using the cinematic template, Sequencer, and Movie Render Pipeline.
+Unreal Engine **5.8** project for **VbN Videos** (*Valley by Night* cinematics) using the cinematic template, Sequencer, and Movie Render Pipeline.
+
+Style contract: [`style_bible/VbN_Unreal_Engine_LookDev.md`](style_bible/VbN_Unreal_Engine_LookDev.md).
 
 ## Open the project
 
@@ -23,4 +25,8 @@ Project rules live in `.cursor/rules/`. See `AGENTS.md` for structure and MCP-re
 
 ## Git
 
-A `.gitignore` excludes Unreal build artifacts and local `Saved/` data. Commit when you are ready; large binary Content may need Git LFS if you use a remote.
+A `.gitignore` excludes Unreal build artifacts and local `Saved/` data.
+
+**Remote:** https://github.com/websitetalkingheadsvideo/unreal-mcp.git
+
+As `Content/` grows, consider Git LFS for large `.uasset` / `.umap` files.

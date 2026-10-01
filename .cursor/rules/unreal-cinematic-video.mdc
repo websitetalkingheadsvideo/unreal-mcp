@@ -6,6 +6,8 @@ alwaysApply: false
 
 # Cinematic / video workflow
 
+All creative direction must match **VbN Videos** look-dev (`style_bible/VbN_Unreal_Engine_LookDev.md`).
+
 ## Rendering stack (project defaults)
 
 - **GI / reflections:** Lumen (`r.DynamicGlobalIlluminationMethod=1`, `r.ReflectionMethod=1`).
@@ -14,7 +16,7 @@ alwaysApply: false
 
 ## Practical guidance
 
-- **Previs in editor**, **finals via MRQ** (image sequences → external encode if needed).
+- **Previs in editor**, **finals via MRQ** at **1920×1080** (image sequences → external encode if needed).
 - Sequencer is the source of truth for shot timing, cameras, and cuts.
 - MetaHuman + Virtual Camera plugins are in play — prefer existing template content under `Content/CinematicTemplate/` before greenfield setups.
 - When tuning exposure: project disables default auto-exposure; use manual / local exposure as configured.

@@ -1,6 +1,8 @@
 # MCP_test — agent notes
 
-Unreal Engine **5.8** project for **cinematic video production** (Sequencer + Movie Render Pipeline), built on the cinematic template with MetaHuman and virtual production plugins.
+Unreal Engine **5.8** project for **VbN Videos** — cinematic output for *Valley by Night* (Sequencer + Movie Render Pipeline), built on the cinematic template with MetaHuman and virtual production plugins.
+
+**Look-dev authority:** `style_bible/VbN_Unreal_Engine_LookDev.md` (gothic–noir Phoenix 1994, palette, camera, lighting recipes, MRQ 1080p).
 
 ## Layout
 
@@ -11,6 +13,7 @@ Unreal Engine **5.8** project for **cinematic video production** (Sequencer + Mo
 | `Content/CinematicTemplate/` | Template maps and cinematic assets |
 | `Content/Characters/` | Character-related content |
 | `Content/Collections/` | Editor collections |
+| `style_bible/` | Full VbN Art Bible copy + RULES/PROMPTS/LookDev (sync from amber `style_agent`) |
 
 Generated/cache (do not track in git): `Intermediate/`, `Saved/`, `DerivedDataCache/`, `Binaries/`.
 
@@ -26,4 +29,4 @@ These editor plugins are enabled: **ModelContextProtocol**, **MCPClientToolset**
 
 ## Git
 
-Repository initialized for Cursor workflow. Initial commit and remote (e.g. Cursor Origin) only when the user requests it.
+Remote: [websitetalkingheadsvideo/unreal-mcp](https://github.com/websitetalkingheadsvideo/unreal-mcp) (`origin` → `main`).
